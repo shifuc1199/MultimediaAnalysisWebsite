@@ -1,0 +1,110 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    text-align: center;
+}
+
+.auto-style1 {
+    font-size: larger;
+}
+
+.auto-style2 {
+    font-size: 50pt;
+    font-weight: normal;
+}
+
+.auto-style3 {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.auto-style4 {
+    font-size: 35px;
+    color: #000000;
+}
+
+.font {
+    font-size: 25px;
+}
+
+#TextBox1 {
+}
+
+.input {
+    background-color: #f4f5f7;
+    border: 1px solid #e5e9ef;
+    color: #555;
+    border-radius: 4px;
+}
+
+.input:hover {
+    background-color: #fff;
+}
+
+
+.login {
+    height: 300px;
+    width: 500px;
+    background-color: #fff;
+    position: absolute;
+    left: 36%;
+    top: 323px;
+    z-index: 1;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.50);
+    border-radius: 25px;
+}
+
+.btn {
+    background-color: #4457c0;
+    color: white;
+    border: 1px solid #4457c0;
+    /* 文字之间的空隙 */
+    letter-spacing: 5px;
+    border-radius: 4px;
+}
+.btn:hover {
+    background-color: #4457c0e3;
+}
+.out {
+    height: 1000px;
+}
+
+.bg_up {
+    height: 75%;
+    width: 100%;
+    background-image: url(../images/wave-hero-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    box-sizing: border-box;
+}
+.yonghu {
+    height: 25px;
+    width: 25px;
+    background-image: url(../images/yonghu.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 135px;
+    position: absolute;
+}
+.mima {
+    height: 25px;
+    width: 25px;
+    background-image: url(../images/mima.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 135px;
+    position: absolute;
+}

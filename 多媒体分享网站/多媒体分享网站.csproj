@@ -1,0 +1,343 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D06B8A48-0289-4608-9F5A-CBFFF6F7C180}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>多媒体分享网站</RootNamespace>
+    <AssemblyName>多媒体分享网站</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\多媒体分享网站.dll" />
+    <Content Include="bin\多媒体分享网站.pdb" />
+    <Content Include="CollectPage.aspx" />
+    <Content Include="css\CollectPage.css" />
+    <Content Include="css\common.css" />
+    <Content Include="css\font\iconfont.svg" />
+    <Content Include="css\iconfont.css" />
+    <Content Include="css\icon_httc42opvj\collection-b.svg" />
+    <Content Include="css\icon_httc42opvj\dianzan.svg" />
+    <Content Include="css\icon_httc42opvj\icon-test.svg" />
+    <Content Include="css\icon_httc42opvj\mima.svg" />
+    <Content Include="css\icon_ip4ufmt36ld\mima.svg" />
+    <Content Include="css\icon_ip4ufmt36ld\shouye.svg" />
+    <Content Include="css\icon_ip4ufmt36ld\yonghu.svg" />
+    <Content Include="css\LoginPage.css" />
+    <Content Include="css\MainPage.css" />
+    <Content Include="css\RegisterPage.css" />
+    <Content Include="css\VideoPage.css" />
+    <Content Include="css\VideoUpLoadPage.css" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="ffmpeg.exe" />
+    <Content Include="font\iconfont.svg" />
+    <Content Include="font_0gqfpuvnicp5\demo.css" />
+    <Content Include="font_0gqfpuvnicp5\demo_index.html" />
+    <Content Include="font_0gqfpuvnicp5\iconfont.js" />
+    <Content Include="Global.asax" />
+    <Content Include="images\mima.svg" />
+    <Content Include="images\shouye.svg" />
+    <Content Include="images\wave-footer.svg" />
+    <Content Include="images\wave-header.svg" />
+    <Content Include="images\wave-hero-background.svg" />
+    <Content Include="images\wave-left.svg" />
+    <Content Include="images\yonghu.svg" />
+    <Content Include="LoginPage.aspx" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="ManagerPage.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\MySql.Data.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csi.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.AppContext.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Console.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Pipes.AccessControl.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Pipes.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.AccessControl.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Claims.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Principal.Windows.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\多媒体分享网站.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\多媒体分享网站.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\CollectPage.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\ErrorPage.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Global.asax" />
+    <Content Include="obj\Release\Package\PackageTmp\LoginPage.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\MainPage.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\ManagerPage.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\RegisterPage.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\uploadify-v3.1\Huploadify.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\uploadify-v3.1\jquery.Huploadify.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\uploadify-v3.1\jquery.js" />
+    <Content Include="obj\Release\Package\PackageTmp\VideoPage.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\VideoUpLoadPage.aspx" />
+    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
+    <Content Include="obj\Release\多媒体分享网站.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\多媒体分享网站.dll" />
+    <Content Include="obj\Release\多媒体分享网站.pdb" />
+    <Content Include="RegisterPage.aspx" />
+    <Content Include="css\font\iconfont.eot" />
+    <Content Include="css\font\iconfont.ttf" />
+    <Content Include="css\font\iconfont.woff" />
+    <Content Include="font\iconfont.eot" />
+    <Content Include="font\iconfont.ttf" />
+    <Content Include="font\iconfont.woff" />
+    <Content Include="font_0gqfpuvnicp5\iconfont.woff2" />
+    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.exe.config" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.rsp" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csi.exe.config" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csi.rsp" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe.config" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.rsp" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Tool\UploadHandler.ashx" />
+    <Content Include="obj\Release\Package\PackageTmp\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
+    <Content Include="obj\Release\多媒体分享网站.csproj.CopyComplete" />
+    <Content Include="obj\Release\多媒体分享网站.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Release\多媒体分享网站.csprojAssemblyReference.cache" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Scripts\uploadify-v3.1\Huploadify.css" />
+    <Content Include="Scripts\uploadify-v3.1\jquery.Huploadify.js" />
+    <Content Include="Scripts\uploadify-v3.1\jquery.js" />
+    <Content Include="VideoPage.aspx" />
+    <Content Include="VideoUpLoadPage.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CollectPage.aspx.cs">
+      <DependentUpon>CollectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CollectPage.aspx.designer.cs">
+      <DependentUpon>CollectPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\CollectDAO.cs" />
+    <Compile Include="DataBase\CommentDAO.cs" />
+    <Compile Include="DataBase\NoDAO.cs" />
+    <Compile Include="DataBase\VideoDao.cs" />
+    <Compile Include="DataBase\YesDAO.cs" />
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerPage.aspx.cs">
+      <DependentUpon>ManagerPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerPage.aspx.designer.cs">
+      <DependentUpon>ManagerPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CollectModel.cs" />
+    <Compile Include="Model\CommentModel.cs" />
+    <Compile Include="Model\NoModel.cs" />
+    <Compile Include="Model\YesModel.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Tool\Factory.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DAO.cs" />
+    <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Model\VideoModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterPage.aspx.cs">
+      <DependentUpon>RegisterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterPage.aspx.designer.cs">
+      <DependentUpon>RegisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\SqlHelper.cs" />
+    <Compile Include="DataBase\UserDAO.cs" />
+    <Compile Include="Tool\Tool.cs" />
+    <Compile Include="Tool\UploadHandler.ashx.cs">
+      <DependentUpon>UploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="VideoPage.aspx.cs">
+      <DependentUpon>VideoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VideoPage.aspx.designer.cs">
+      <DependentUpon>VideoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VideoUpLoadPage.aspx.cs">
+      <DependentUpon>VideoUpLoadPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VideoUpLoadPage.aspx.designer.cs">
+      <DependentUpon>VideoUpLoadPage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Tool\UploadHandler.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\" />
+    <Folder Include="obj\Release\TempPE\" />
+    <Folder Include="VideoIcon\" />
+    <Folder Include="Video\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49875</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49875/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

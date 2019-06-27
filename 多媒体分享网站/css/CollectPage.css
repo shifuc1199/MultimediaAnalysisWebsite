@@ -1,0 +1,36 @@
+#Table1 {
+    border: 1px solid #757575;
+}
+body, html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bt::-webkit-scrollbar {
+    width: 0 !important; /* remove scrollbar space */
+    background: transparent; /* optional: just make scrollbar invisible */
+}
+
+/* 兼容IE10+ */
+.bt {
+    -ms-overflow-style: none;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    overflow-y: scroll;
+    position: relative
+}
+
+/* 但是firefox代码无效 */
+.bt {
+    overflow: -moz-scrollbars-none;
+}
+
+.wapper {
+    min-height100 %;
+    margin: 0 auto -120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
